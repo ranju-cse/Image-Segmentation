@@ -1,0 +1,90 @@
+/* ------------------------------
+   ADVANCED DARK THEME BACKGROUND
+--------------------------------*/
+body, .stApp {
+    background: linear-gradient(145deg, #1a1e2e, #121622, #0d111b);
+    background-size: 400% 400%;
+    animation: bgMove 18s ease infinite;
+    color: #e2e8f0 !important;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Smooth Animated Background */
+@keyframes bgMove {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* ------------------------------
+   HEADER
+--------------------------------*/
+.main-title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 900;
+    margin-top: 20px;
+    background: linear-gradient(to right, #4f9cff, #b983ff, #63e1ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 1px;
+    text-shadow: 0px 3px 10px rgba(99, 215, 255, 0.4);
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 18px;
+    margin-top: -8px;
+    color: #e8ecf1;
+}
+
+/* ------------------------------
+   GLOWING GLASS UPLOAD CARD
+--------------------------------*/
+.upload-card {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(12px);
+    padding: 22px;
+    border-radius: 14px;
+    margin-top: 30px;
+    border: 1.5px solid rgba(255, 255, 255, 0.12);
+
+    /* Glow effect */
+    box-shadow:
+        0 0 12px rgba(113, 182, 255, 0.4),
+        0 0 24px rgba(113, 182, 255, 0.25);
+    transition: 0.25s ease;
+}
+
+.upload-card:hover {
+    transform: scale(1.025);
+    border-color: #67e8f9;
+    box-shadow:
+        0 0 14px rgba(113, 182, 255, 0.75),
+        0 0 30px rgba(113, 182, 255, 0.45);
+}
+
+/* ------------------------------
+   IMAGE CONTAINER GLOW
+--------------------------------*/
+img {
+    border-radius: 12px !important;
+    border: 2px solid rgba(255, 255, 255, 0.18) !important;
+    box-shadow:
+        0 0 10px rgba(132, 173, 255, 0.35),
+        0 0 20px rgba(132, 173, 255, 0.25);
+}
+
+/* ------------------------------
+   FOOTNOTE
+--------------------------------*/
+.note {
+    text-align: center;
+    margin-top: 25px;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 15px;
+    color: #cbd5e1;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+}
